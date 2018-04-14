@@ -5,3 +5,4 @@ third white!!
 Creating a new branch is quick.
 
 switch dev!
+Creating a new branch is quick & simple.
