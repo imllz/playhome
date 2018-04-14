@@ -7,3 +7,5 @@ Creating a new branch is quick.
 switch dev!
 
 Creating a new branch is quick and simple.
+
+vs code git
