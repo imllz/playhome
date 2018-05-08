@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body,
+  .parent {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .parent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top {
+    height: 100px;
+    background: red;
+  }
+
+  .middle {
+    flex: 1;
+    display: flex;
+  }
+
+  .left {
+    width: 100px;
+    background: green;
+  }
+
+  .right {
+    flex: 1;
+    overflow: auto;
+    background: yellow;
+  }
+
+  .right .inner {
+    min-height: 1100px;
+  }
+
+  .bottom {
+    height: 50px;
+    background: blue;
+  }
+</style>
+
+<body>
+  <div class="parent">
+    <div class="top">top</div>
+    <div class="middle">
+      <div class="left">left</div>
+      <div class="right">
+        <div class="inner">
+        </div>
+      </div>
+    </div>
+    <div class="bottom">bottom</div>
+  </div>
+</body>
+
+</html>
